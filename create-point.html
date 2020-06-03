@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--TAG acima é importante para que a página de adpapte ao conteúdo usando @media no CSS-->
+    <title>Cria um ponto de coleta</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;700&family=Ubuntu:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/Aula 1/NLW/styles/main.css">
+    <link rel="stylesheet" href="/Aula 1/NLW/styles/create-point.css">
+    <link rel="stylesheet" href="/Aula 1/NLW/styles/responsive.css">
+    
+</head>
+
+<body>
+<body>
+    <div id="page-create-point">
+        <header>
+                <img src="/Aula 1/NLW/assets/logo.svg" alt="Logomarca">
+                <a href="http://www.google.com.br">
+                    <span></span>Voltar para home</a>
+        </header>
+        <form action="">
+            <h1>Cadastro do Ponto de Coleta</h1>
+
+            <fieldset><!-- separar elementos de uma box, em vez de usar div, usaremos para separar elementos em uma box de formulário -->
+                <legend>
+                    <h2>Dados da entidade</h2>
+                </legend>
+                <div class="field">
+                    <label for="name">Nome da entidade</label><!--Label é o que fica em cima-->
+                    <input type="text" name="name">
+                </div>
+
+                <div class="field-group">
+                    <div class="field">
+                        <label for="address">Endereço</label>
+                        <input type="text" name="address">
+                    </div>
+                    <div class="field">
+                        <label for="address2">Número/Complemento</label>
+                        <input type="text" name="address2">
+                    </div>
+                </div>
+                <div class="field-group">
+                    <div class="field">
+                        <label for="state">Estado</label>
+                        <select name="uf">
+                            <option value="">Selecione o Estado</option>
+                        </select>
+                        <input type="hidden" name="state">
+                    </div>
+
+                    <div class="field">
+                        <label for="city">Cidade</label>
+                        <select name="city" disabled>
+                            <option value="">Selecione a Cidade</option>
+                        </select>
+                    </div>
+                </div>
+            </fieldset>
+
+            <fieldset>
+                <legend>
+                    <h2>Itens de coleta</h2>
+                </legend>
+            </fieldset>
+            <button type="submmit">Cadastrar ponto de coleta</button>
+        </form>
+    </div>
+    <script src="/Aula 1/NLW/scripts/create-point.js"></script>
+    <body>
+</html>

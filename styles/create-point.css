@@ -1,0 +1,90 @@
+#page-create-point{
+    width: 90%;
+    max-width: 1100px;
+    margin: 0 auto;/*Alinhamento de caixa do lado de fora*/
+}
+#page-create-point header{
+    margin-top: 48px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+#page-create-point header a{
+    color: var(--title-color);
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+}
+#page-create-point header a span{
+   margin-right: 16px;
+    background-image: url('../assets/arrow-left.svg');
+    width: 24px;
+    height: 24px;
+    display: flex;
+}
+#page-create-point form{
+    background-color: white;
+    padding: 64px; /*preenchimento interno, criar uma box*/
+    border-radius: 8px;
+    margin: 80px auto;
+    max-width: 790px;
+}
+form h1{
+    font-size: 36px;
+}
+form fieldset{
+    margin-top: 64px;
+    border: 0;
+}
+form legend{
+    margin-bottom: 40px;
+}
+forma legend h2{
+    font-size: 24px;
+}
+form .field{
+    flex: 1; /*deixar ocupado todo o espaço de forma uniforme*/
+    font-weight: bold;
+    display: flex; /*Colocar de forma mais flexível*/
+    flex-direction: column;/*colocou flexível, colocar esse para um ficar em baixo do outro*/
+    margin-bottom: 24px;
+}
+form .field-group{
+    display: flex;
+}
+form input, form select{
+    background-color: #f0f0f5;
+    border: 0;
+    padding: 16px 24px;
+    font-size: 16px;
+    /*outline: none; - caixa de seleção para que apareã ou não em volta da caixa selecionada um linha em volta quando passar o mouse*/
+    border-radius: 8px;
+}
+form select{
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+}
+form label{
+    font-size: 14px;
+    margin-bottom: 8px;
+}
+form .field-group .field + .field{/*Aqui vamos separar um pouco as margens entre endereço e número, como também o de Estado e Cidade*/
+    margin-left: 24px;
+}
+form button{
+    width: 260px;
+    height: 56px;
+    background-color: var(--primary-color);
+    border-radius: 8px;
+    color: white;
+    font-weight: bold;
+    font-size: 16px;
+    border: 0;
+    margin-top: 40px;
+    transition: background-color 400ms;
+}
+form button:hover{
+    background-color: #2fb86e;
+    
+}
