@@ -88,3 +88,37 @@ form button:hover{
     background-color: #2fb86e;
     
 }
+.items-grid{/*aqui se separou por colunas, medidas das colunas mais flexivel, usar "fr" faz com que se comporte de forma a separar o espaço igual a todas as colunas*/
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 16px; /*usando gap com grid, melhor que com margin, já que a configuração seria mais trabalhosa ao mexer em cada item*/
+}
+.items-grid li{ /* Aqui criou tudo, fundo, cor, alinhamento,*/
+    background-color: #f5f5f5;
+    list-style: none;
+    border: 2px solid #f5f5f5;
+    border-radius: 8px;
+    height: 180px;
+    padding: 32px 24px 16px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    text-align: center;
+    cursor: pointer;
+}
+.items-grid li span{ /*Aqui se ajeitou a imagem e o texto para ficar alinhado com a box que estão inseridos. Visual mais bonito*/
+    margin-top: 12px;
+    flex: 1;
+    display: flex;
+    align-items: center;
+    color: var(--title-color);
+}
+.items-grid li.selected{
+    background: #e1faec;
+    border: 2px solid #34cb79;
+}
+.items-grid li img,
+.items-grid li span{
+    pointer-events: none;
+}
