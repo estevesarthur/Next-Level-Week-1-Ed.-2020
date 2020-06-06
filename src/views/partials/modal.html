@@ -1,0 +1,21 @@
+<!--Código estilo modal-->
+<div id="modal" class="hide">
+    <!--class=hide é para usar no JS para que a modal apareça ao clica em pesquisar pontos de coleta e ao clicar em X colocar a class hide novamente-->
+    <div class="content">
+        <div class="header">
+            <h1>Pontos de coleta</h1>
+            <a href="/">Fechar</a>
+        </div>
+        <form action="/search-results">
+            <label for="search">Cidade</label>
+            <div class="search field">
+                <input type="text" name="search" placeholder="Digite a cidade">
+                <!--placeholder em input deixa uma escrita nao selecionavel, apenas como orientação do que se digitar-->
+                <button>
+                    <img src="/assets/search.svg" alt="Buscar">
+                </button>
+            </div>
+
+        </form>
+    </div>
+</div>
